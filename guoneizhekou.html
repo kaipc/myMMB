@@ -12,12 +12,12 @@
 </head>
 <body>
     <header id='header'>
-        <a href="javascript:;hostory.back()" class="fa fa-chevron-left"></a>
+        <a href="javascript:history.back();" class="fa fa-chevron-left"></a>
         <h1>国内折扣</h1>
         <a href="#" class="downApp"></a>
     </header>
     <main id='product' class="clearfix">
-        <ul>
+        <!-- <ul>
             <li class="product-list">
                 <a href="#" title="巴拉巴拉 童装女童外套中大童西服 79元">
                     <img src="./images/5077d46f61044d109b379df5281ad131.jpg">
@@ -58,8 +58,23 @@
                     </div>
                 </a>
             </li>
-        </ul>
+        </ul> -->
     </main>
+    <script type='text/html' id='productTmp'>
+        <ul>
+            {{each result as value i}}
+            <li class="product-list">
+                <a href="/zhegou.html?id={{value.productId}}" title="{{value.productName}}">
+                    {{#value.productImg}}
+                    <div class="title">{{value.productName}}</div>
+                    <div class="price">{{value.productPrice}}</div>
+                    <div class="info">
+                        <div class="mall">{{value.productFrom}} | {{value.productTime}}</div>
+                    </div>
+                </a>
+            </li>         
+            {{/each}}
+    </script>
     <div id="more">
         <img src="./images/loading.gif" alt="">
     </div>

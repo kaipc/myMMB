@@ -1,0 +1,285 @@
+@import 'base.less';
+
+body{
+    background-color: #f2f2f2;
+}
+#header{
+    background-color: @main-color;
+    height: 44px;
+    position: relative;
+    text-align: center;
+    a:nth-of-type(1){
+        position: absolute;
+        left: 12px;
+        font-size: 17px;
+        top: 13px;
+        color: #fff;
+        
+    }
+    >h1{
+        color: #fff;
+        font-size: 20px;
+        margin: 0;
+        line-height: 44px;
+        font-weight: 600;
+    }
+    a:nth-of-type(2){
+        // color: #fff;
+        position: absolute;
+        right: 17px;
+        top: 4px;
+        font-size: 17px;
+        background-image: url('./../images/header_app.png');
+        background-size: 34px 34px;
+        width: 34px;
+        height: 34px;
+    }
+}
+
+#product-detail{
+    background-color: #fff;
+    .product-content{
+        height: 394px;
+        padding: 4px 10px;
+        .product-title{
+            >h3{
+                // height: 52px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+                font-size: 18px;
+                font-weight: 900;
+                line-height: 26px;
+                color: #5a5a5a;
+            }
+        }
+        .product-price{
+            height: 20px;
+            line-height: 20px;
+            font-size: 15px;
+            color: @main-color;
+            font-weight: 600;
+        }
+        .product-info{
+            height: 25px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+            font-size: 12px;
+            .mall{
+
+            }
+            .time{
+
+            }
+            .author{
+
+            }
+            span{
+                color: #ccc;
+                &+span{
+                    margin-left: 4px;
+                }
+            }
+        }
+        .product-introduce{
+            position: relative;
+            height: 170px;
+            padding-bottom: 20px;
+            .introduce{
+                margin-right: 120px;
+                color: #606060;
+                >a{
+                    color: #4682c5;
+                }
+            }
+            .product-img{
+                position: absolute;
+                right: 0;
+                img{
+                    width: 120px;
+                    height: 120px;
+                }
+            }
+        }
+        .gobuy{
+            height: 40px;
+            line-height: 40px;
+            margin: 20px 10px;
+            >a{
+                display: block;
+                width: 100%;
+                height: 100%;
+                color: #fff;
+                text-align: center;
+                
+                background-color: @main-color;
+            }
+        }
+    }
+    .product-comment{
+        line-height: 21px;
+        .comment-title{
+            height: 33px;
+            padding: 6px 8px;
+        }
+        .comment-form{
+            padding: 6px 8px;
+            height: 125px;
+           .box{
+               padding-left: 4px;
+               padding-top: 4px;
+               .br;
+               .bl;
+               .bt;
+               .bb;
+                .textarea{
+                    height: 68px;
+                }
+                .input-form{
+                    .bt;
+                    margin-left: -4px;
+                    height: 36px;
+                    >input{
+                        float: right;
+                        height: 36px;
+                        width: 98px;
+                        background-color: @main-color;
+                        color: #fff;
+                    }
+                }
+           }
+        }
+        .new-comment{
+            height: 33px;
+            line-height: 21px;
+            padding: 6px 8px;
+        }
+    }
+}
+.tag{
+    height: 39px;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: #606060;
+}
+
+#loadNav{
+
+    height: 38px;
+    margin-top: 20px;
+    .bt;
+    .bb;
+    .breadcrumb{
+        a{
+
+            color: #000;
+        }
+        background: linear-gradient(180deg, #fdfdfd, #ebebeb);
+        padding: 0 0 0 8px;
+        margin-bottom: 0;
+        line-height: 36px;
+    }
+}
+
+#footer{
+    margin-top: 84px;
+    position: relative;
+    .banner{
+        position: absolute;
+        height: 84px;
+        padding: 10px;
+        background-color: #434343;
+        top: -75px;
+        left: 8px;
+        width: 100%;
+        z-index: 3;
+        color: #fff;
+        .applogo{
+            position: absolute;
+            
+            >img{
+                width: 64px;
+                height: 64px;
+            }
+        }
+        .title{
+            color: #fff;
+           
+            font-size: 18px;
+            margin-left: 70px;
+            margin-top: 5px;
+            >p{
+                color: #fff;
+                margin-top: 10px;
+                font-size: 14px;
+            }
+        }
+        .btn{
+            position: absolute;
+            top: 4px;
+            right: 18px;
+            background-color: #6db110;
+            height: 28px;
+            width: 80px;
+            line-height: 28px;
+            padding: 0;
+            >a{
+                color: #fff;
+            }
+        }
+    }
+    .foot-top{
+        border-top: 1px solid #cfcfcf;
+        border-bottom: 1px solid #cfcfcf;
+        text-align: center;
+        margin-top: 25px;
+        height: 36px;
+        >a{
+            color: #000;
+            float: left;
+            
+            line-height: 34px;
+            font-size: 14px;
+            position: relative;
+            &:nth-of-type(1){
+                width: 30%;
+            }
+            &:nth-of-type(2){
+                width: 30%;
+            }
+            &:nth-of-type(3){
+                width: 40%;
+            }
+            .gotop{
+                position: absolute;
+                background-image: url('./../images/top.jpg');
+                width: 15px;
+                height: 15px;
+                background-size: 15px 15px;
+                left: 35px;
+                top: 8px;
+            }
+            &+a{
+                border-left: 1px solid #cfcfcf;
+            }
+        }
+    }
+    .foot-body{
+        height: 60px;
+        padding: 15px;
+        text-align: center;
+        >p{
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+        .appDown{
+            color: #ff0000;
+        }
+    }
+}
+
+#appDown{
+    position: fixed;
+    right: 0;
+    bottom: 30px;
+    z-index: 999;
+}
